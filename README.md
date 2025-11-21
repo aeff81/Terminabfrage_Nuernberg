@@ -6,7 +6,11 @@ Um nicht ständig auf die Webseite starren zu müssen, habe ich dieses Script ge
 
 while true; do php termine.php; sleep 60; done
 
-in einem Screen laufen lassen. Ein Cronjob wäre auch möglich gewesen, jedoch wollte ich gelegentlich eben doch manuell die Ausgabe checken.
+in einem Screen laufen lassen. Ein Cronjob wäre auch möglich gewesen (dann mit Umleitung der Ausgabe nach /dev/null), 
+jedoch wollte ich gelegentlich eben doch manuell die Ausgabe checken.
+
+Übrigens: Die Webseite der Stadt selbst ruft den Microservice auch alle 60 Sekunden ab. Vielleicht sollte man dieses Intervall nicht zu sehr unterschreiten,
+damit man unter dem Radar der dortigen IT-Abteilung bleibt. ;-)
 
 Das Script fragt den Microservice der Stadt ab, gibt die Termine auf stdout aus und schickt, wenn ein Termin in einem definierten Zeitfenster enthalten ist, eine E-Mail.
 Diese Vorgaben lassen sich mit den Variablen im oberen Teil konfigurieren.
