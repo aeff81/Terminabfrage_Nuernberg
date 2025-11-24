@@ -10,8 +10,8 @@
  */
 $dienstleistung=75;
 # Zeitstempel in Unix-Zeit (Google: "Epoch converter")
-$nichtvor=1763717577; // 21.11.
-$nichtnach=176467770; // 2.12. 13:15
+$nichtvor=1763717577; // 21.11.2025
+$nichtnach=1764677700; // 2.12.2025
 $emailempfaenger='somebody@example.com';
 $url = "https://microservices.nuernberg.de/behoerdenwegweiser/tevis/dates";
 
